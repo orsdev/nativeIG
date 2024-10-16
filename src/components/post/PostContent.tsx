@@ -1,5 +1,5 @@
 import { ThemeColor } from "@/constants";
-import { Text } from "react-native";
+import { Pressable, Text } from "react-native";
 import { StyleSheet, View } from "react-native";
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import Feather from 'react-native-vector-icons/Feather'
@@ -8,18 +8,22 @@ import { PostHeader } from "./PostHeader";
 import { PostDescription } from "./PostDesc";
 import { PostComment } from "./PostComment";
 import { PostImage } from "./PostImage";
+import { IPost } from "@/interfaces/post.interface";
 
 interface IPostContent {
-    image: string;
+    post: IPost
 };
 
-export const PostContent = ({ image }: IPostContent) => {
+
+export const PostContent = ({ post }: IPostContent) => {
     const isLiked = false;
+    const comments = post?.comments ?? [];
+    // const hasComments = comments?.length > 0;
 
     return (
         <View style={styles.root}>
-            <PostHeader imageUri={image} />
-            <PostImage image={image} />
+            <PostHeader imageUri={post?.image} />
+            <PostImage image={post?.image} />
             <View style={styles.footer}>
                 <View style={styles.container}>
                     <AntDesign name={isLiked ? 'heart' : 'hearto'} size={24} style={styles.icon} color={ThemeColor.black} />
@@ -40,19 +44,27 @@ export const PostContent = ({ image }: IPostContent) => {
                 <Text> Liked by {" "}
                     <Text style={[styles.bold]}>gradu</Text>{" "}
                     and {" "}
-                    <Text style={[styles.bold]}>66 others</Text>
+                    <Text style={[styles.bold]}>{post.nofLikes} others</Text>
                 </Text>
                 <PostDescription
-                    username="sogundare"
-                    content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt eius quaerat, architecto beatae minima similique culpa atque delectus minus obcaecati praesentium adipisci ut deleniti officiis dolores, accusamus expedita rerum. Temporibus." />
+                    username={post.user?.username}
+                    content={post?.description} />
+                {/* Total comments Button */}
+                <Pressable>
+                    <Text style={{
+                        color: ThemeColor.grey,
+                        marginTop: 5
+                    }}>{`View all ${post.nofComments} comments`}</Text>
+                </Pressable>
 
                 {/* Comment */}
-                <PostComment
-                    username="sogundare"
-                    date="Sept 24, 2002"
-                    totalComments={25}
-                    comment="Lorem ipsum, dolor sit amet consecteture adipisicing elite."
-                />
+                {post.comments?.map(comment => (
+                    <PostComment
+                        key={comment.id}
+                        username={comment.user.username}
+                        date="Sept 24, 2002"
+                        comment={comment.comment} />
+                ))}
             </View>
         </View>
     )
