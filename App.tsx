@@ -1,7 +1,5 @@
-import React from 'react';
 import {
-  SafeAreaView,
-  StyleSheet,
+  SafeAreaView
 } from 'react-native';
 import HomeScreen from '@/screens/home';
 
@@ -14,9 +12,5 @@ function App(): React.JSX.Element {
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  root: {}
-});
 
 export default App;

@@ -1,13 +1,13 @@
 import {
   FlatList
 } from 'react-native';
-import PostJson from '@/assets/posts.json'
+import { PostData } from '@/constants';
 import { PostContent } from '@/components/post';
 
 const HomeScreen = () => {
   return (
     <FlatList
-      data={PostJson}
+      data={PostData}
       keyExtractor={item => item.id}
       renderItem={({ item }) => <PostContent post={item} />}
       showsVerticalScrollIndicator={false}

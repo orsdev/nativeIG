@@ -9,24 +9,34 @@ import { PostDescription } from "./PostDesc";
 import { PostComment } from "./PostComment";
 import { PostImage } from "./PostImage";
 import { IPost } from "@/interfaces/post.interface";
-
+import { useState } from "react";
 interface IPostContent {
     post: IPost
 };
 
-
 export const PostContent = ({ post }: IPostContent) => {
-    const isLiked = false;
-    const comments = post?.comments ?? [];
-    // const hasComments = comments?.length > 0;
+    const [isLiked, setIsLiked] = useState(false);
+
+    const toggleLike = () => {
+        setIsLiked(state => !state)
+    }
 
     return (
         <View style={styles.root}>
-            <PostHeader imageUri={post?.image} />
-            <PostImage image={post?.image} />
+            <PostHeader imageUri={post?.images?.[0]} />
+            <PostImage
+                images={post?.images}
+                handleClick={toggleLike}
+            />
+
             <View style={styles.footer}>
                 <View style={styles.container}>
-                    <AntDesign name={isLiked ? 'heart' : 'hearto'} size={24} style={styles.icon} color={ThemeColor.black} />
+                    <Pressable onPress={toggleLike}>
+                        <AntDesign
+                            name={isLiked ? 'heart' : 'hearto'} size={24}
+                            style={styles.icon}
+                            color={isLiked ? ThemeColor.accent : ThemeColor.black} />
+                    </Pressable>
                     <Ionicons name="chatbubble-outline"
                         size={24}
                         style={styles.icon} color={ThemeColor.black} />
@@ -49,6 +59,7 @@ export const PostContent = ({ post }: IPostContent) => {
                 <PostDescription
                     username={post.user?.username}
                     content={post?.description} />
+
                 {/* Total comments Button */}
                 <Pressable>
                     <Text style={{

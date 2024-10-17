@@ -1,7 +1,7 @@
 export interface IPost {
   id: string
   createdAt: string
-  image: string
+  images: Array<string>;
   description: string
   user: User
   nofComments: number

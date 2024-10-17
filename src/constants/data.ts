@@ -1,4 +1,4 @@
-[
+export const PostData = [
   {
     "id": "1",
     "createdAt": "19 December 2021",
