@@ -1,7 +1,8 @@
 export interface IPost {
   id: string
-  createdAt: string
-  images: Array<string>;
+  createdAt: string,
+  video?: string;
+  images?: Array<string>;
   description: string
   user: User
   nofComments: number

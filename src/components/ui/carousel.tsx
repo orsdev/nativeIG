@@ -30,7 +30,6 @@ Index calculation: Since the FlatList is paginated (in this example), scrolling 
 export const Carousel = ({ images, handleClick }: ICarousel) => {
   const { width } = useWindowDimensions();
   const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const configRef = useState()
 
   // const onScroll = (event: NativeSyntheticEvent<NativeScrollEvent>) => {
   //   const contentOffsetX = event.nativeEvent.contentOffset.x;

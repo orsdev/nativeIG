@@ -10,11 +10,14 @@ import { PostComment } from "./PostComment";
 import { PostImage } from "./PostImage";
 import { IPost } from "@/interfaces/post.interface";
 import { useState } from "react";
+import { PostVideo } from "./PostVideo";
+import { DoublePressable } from "../ui";
 interface IPostContent {
-    post: IPost
+    post: IPost;
+    activePostId: string;
 };
 
-export const PostContent = ({ post }: IPostContent) => {
+export const PostContent = ({ post, activePostId }: IPostContent) => {
     const [isLiked, setIsLiked] = useState(false);
 
     const toggleLike = () => {
@@ -23,12 +26,18 @@ export const PostContent = ({ post }: IPostContent) => {
 
     return (
         <View style={styles.root}>
-            <PostHeader imageUri={post?.images?.[0]} />
-            <PostImage
-                images={post?.images}
-                handleClick={toggleLike}
-            />
-
+            <PostHeader imageUri={"https://images.pexels.com/photos/28974077/pexels-photo-28974077/free-photo-of-close-up-of-two-polar-bears-on-rocky-terrain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />
+            {post?.images && (
+                <PostImage
+                    images={post?.images}
+                    handleClick={toggleLike}
+                />
+            )}
+            {post?.video && (
+                <DoublePressable handlePress={toggleLike}>
+                    <PostVideo videoUrl={post.video} isPaused={activePostId !== post.id} />
+                </DoublePressable>
+            )}
             <View style={styles.footer}>
                 <View style={styles.container}>
                     <Pressable onPress={toggleLike}>
