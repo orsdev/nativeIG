@@ -18,7 +18,8 @@ export interface User {
 
 export interface Comment {
   id: string
-  comment: string
+  comment: string;
+  createdAt: string;
   user: User2
 }
 

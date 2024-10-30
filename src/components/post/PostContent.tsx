@@ -12,6 +12,7 @@ import { IPost } from "@/interfaces/post.interface";
 import { useState } from "react";
 import { PostVideo } from "./PostVideo";
 import { DoublePressable } from "../ui";
+import { formatDateDistance } from "@/libs";
 interface IPostContent {
     post: IPost;
     activePostId: string;
@@ -42,7 +43,8 @@ export const PostContent = ({ post, activePostId }: IPostContent) => {
                 <View style={styles.container}>
                     <Pressable onPress={toggleLike}>
                         <AntDesign
-                            name={isLiked ? 'heart' : 'hearto'} size={24}
+                            name={isLiked ? 'heart' : 'hearto'}
+                             size={24}
                             style={styles.icon}
                             color={isLiked ? ThemeColor.accent : ThemeColor.black} />
                     </Pressable>
@@ -82,9 +84,13 @@ export const PostContent = ({ post, activePostId }: IPostContent) => {
                     <PostComment
                         key={comment.id}
                         username={comment.user.username}
-                        date="Sept 24, 2002"
+                        date={comment.createdAt}
                         comment={comment.comment} />
                 ))}
+                   <Text style={{
+                        color: ThemeColor.grey,
+                        marginTop: 5
+                    }}>{formatDateDistance(post.createdAt)}</Text>
             </View>
         </View>
     )
