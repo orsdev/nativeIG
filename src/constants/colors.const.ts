@@ -4,6 +4,7 @@ export const ThemeColor = {
  grey: '#666666',
  border: '#dcdcdc',
  lightGrey: '#cccc',
+ lightGrey02: '#F8F8F8',
  accent: '#FF0000',
  primary: '#405de6',
 }
