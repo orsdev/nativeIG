@@ -19,3 +19,12 @@ export interface IProfile {
   username: string;
   posts: IProfilePost[]
 }
+
+export interface IUser {
+  id: string;
+  image?: string;
+  name: string;
+  bio?: string;
+  username: string;
+  website?: string
+}

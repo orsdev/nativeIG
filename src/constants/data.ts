@@ -444,3 +444,33 @@ export const ProfileData = {
   ]
 }
 
+export const UserProfile = [
+  {
+    "id": "u1",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
+    "username": "vadimnotjustdev",
+    "name": "Vadim",
+    "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?"
+  },
+  {
+    "id": "u2",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg",
+    "username": "user 1",
+    "name": "Jon",
+    "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?"
+  },
+  {
+    "id": "u3",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg",
+    "username": "user 2",
+    "name": "Melisa",
+    "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?"
+  },
+  {
+    "id": "u4",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg",
+    "username": "user 3",
+    "name": "Dana",
+    "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?"
+  }
+]

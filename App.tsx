@@ -4,6 +4,7 @@ import {
 import HomeScreen from '@/screens/home';
 import CommentScreen from '@/screens/comments';
 import ProfileScreen from '@/screens/profile';
+import EditProfileScreen from '@/screens/edit-profile';
 
 function App(): React.JSX.Element {
   // const isDarkMode = useColorScheme() === 'dark';  
@@ -12,7 +13,8 @@ function App(): React.JSX.Element {
     <SafeAreaView style={{ flex: 1 }}>
       {/* <HomeScreen /> */}
       {/* <CommentScreen /> */}
-      <ProfileScreen />
+      {/* <ProfileScreen /> */}
+      <EditProfileScreen />
     </SafeAreaView>
   );
 }
