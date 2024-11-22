@@ -5,6 +5,7 @@ import HomeScreen from '@/screens/home';
 import CommentScreen from '@/screens/comments';
 import ProfileScreen from '@/screens/profile';
 import EditProfileScreen from '@/screens/edit-profile';
+import PostUploadScreen from '@/screens/post-upload';
 
 function App(): React.JSX.Element {
   // const isDarkMode = useColorScheme() === 'dark';  
@@ -14,7 +15,8 @@ function App(): React.JSX.Element {
       {/* <HomeScreen /> */}
       {/* <CommentScreen /> */}
       {/* <ProfileScreen /> */}
-      <EditProfileScreen />
+      {/* <EditProfileScreen /> */}
+      <PostUploadScreen />
     </SafeAreaView>
   );
 }

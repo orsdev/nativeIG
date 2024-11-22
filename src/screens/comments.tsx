@@ -1,8 +1,7 @@
 import AddComment from "@/components/post/AddComment"
 import { PostComment } from "@/components/post/PostComment"
 import { CommentData, ThemeColor } from "@/constants"
-import { Text } from "react-native"
-import { FlatList, Pressable, StyleSheet, View } from "react-native"
+import { FlatList,  StyleSheet, View } from "react-native"
 
 const CommentScreen = () => {
   return (

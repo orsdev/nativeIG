@@ -8,30 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* nativeIGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* nativeIGTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-nativeIG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-nativeIG.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		189D2D692C8E35D000C1E34F /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D562C8E35D000C1E34F /* Fontisto.ttf */; };
-		189D2D6A2C8E35D000C1E34F /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D572C8E35D000C1E34F /* Octicons.ttf */; };
-		189D2D6B2C8E35D000C1E34F /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D582C8E35D000C1E34F /* Feather.ttf */; };
-		189D2D6C2C8E35D000C1E34F /* FontAwesome6_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D592C8E35D000C1E34F /* FontAwesome6_Regular.ttf */; };
-		189D2D6D2C8E35D000C1E34F /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D5A2C8E35D000C1E34F /* Entypo.ttf */; };
-		189D2D6E2C8E35D000C1E34F /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D5B2C8E35D000C1E34F /* FontAwesome5_Brands.ttf */; };
-		189D2D6F2C8E35D000C1E34F /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D5C2C8E35D000C1E34F /* MaterialCommunityIcons.ttf */; };
-		189D2D702C8E35D000C1E34F /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D5D2C8E35D000C1E34F /* AntDesign.ttf */; };
-		189D2D712C8E35D000C1E34F /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D5E2C8E35D000C1E34F /* Foundation.ttf */; };
-		189D2D722C8E35D000C1E34F /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D5F2C8E35D000C1E34F /* Ionicons.ttf */; };
-		189D2D732C8E35D000C1E34F /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D602C8E35D000C1E34F /* FontAwesome5_Solid.ttf */; };
-		189D2D742C8E35D000C1E34F /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D612C8E35D000C1E34F /* FontAwesome5_Regular.ttf */; };
-		189D2D752C8E35D000C1E34F /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D622C8E35D000C1E34F /* FontAwesome.ttf */; };
-		189D2D762C8E35D000C1E34F /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D632C8E35D000C1E34F /* Zocial.ttf */; };
-		189D2D772C8E35D000C1E34F /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D642C8E35D000C1E34F /* EvilIcons.ttf */; };
-		189D2D782C8E35D000C1E34F /* FontAwesome6_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D652C8E35D000C1E34F /* FontAwesome6_Solid.ttf */; };
-		189D2D792C8E35D000C1E34F /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D662C8E35D000C1E34F /* SimpleLineIcons.ttf */; };
-		189D2D7A2C8E35D000C1E34F /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D672C8E35D000C1E34F /* FontAwesome6_Brands.ttf */; };
-		189D2D7B2C8E35D000C1E34F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189D2D682C8E35D000C1E34F /* MaterialIcons.ttf */; };
-		7699B88040F8A987B510C191 /* libPods-nativeIG-nativeIGTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-nativeIG-nativeIGTests.a */; };
+		3CC848503E21F5EACE602522 /* libPods-nativeIG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F061C73CF2FFCEFE14919CF1 /* libPods-nativeIG.a */; };
+		5970FF4E1CA342CFEFFC59BF /* libPods-nativeIG-nativeIGTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CBFFBB6E98A35DB4A17DF0 /* libPods-nativeIG-nativeIGTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B1BCC1B0BE6FAA275316607C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 59BA693293976870DF2F6CBF /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
@@ -50,6 +31,7 @@
 		00E356EE1AD99517003FC87E /* nativeIGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nativeIGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* nativeIGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nativeIGTests.m; sourceTree = "<group>"; };
+		05CBFFBB6E98A35DB4A17DF0 /* libPods-nativeIG-nativeIGTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeIG-nativeIGTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* nativeIG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nativeIG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = nativeIG/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = nativeIG/AppDelegate.mm; sourceTree = "<group>"; };
@@ -57,34 +39,14 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = nativeIG/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = nativeIG/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = nativeIG/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		189D2D562C8E35D000C1E34F /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
-		189D2D572C8E35D000C1E34F /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
-		189D2D582C8E35D000C1E34F /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
-		189D2D592C8E35D000C1E34F /* FontAwesome6_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Regular.ttf; sourceTree = "<group>"; };
-		189D2D5A2C8E35D000C1E34F /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
-		189D2D5B2C8E35D000C1E34F /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
-		189D2D5C2C8E35D000C1E34F /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
-		189D2D5D2C8E35D000C1E34F /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
-		189D2D5E2C8E35D000C1E34F /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
-		189D2D5F2C8E35D000C1E34F /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
-		189D2D602C8E35D000C1E34F /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
-		189D2D612C8E35D000C1E34F /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
-		189D2D622C8E35D000C1E34F /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
-		189D2D632C8E35D000C1E34F /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
-		189D2D642C8E35D000C1E34F /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
-		189D2D652C8E35D000C1E34F /* FontAwesome6_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Solid.ttf; sourceTree = "<group>"; };
-		189D2D662C8E35D000C1E34F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
-		189D2D672C8E35D000C1E34F /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
-		189D2D682C8E35D000C1E34F /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-nativeIG-nativeIGTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeIG-nativeIGTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-nativeIG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeIG.debug.xcconfig"; path = "Target Support Files/Pods-nativeIG/Pods-nativeIG.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-nativeIG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeIG.release.xcconfig"; path = "Target Support Files/Pods-nativeIG/Pods-nativeIG.release.xcconfig"; sourceTree = "<group>"; };
 		59BA693293976870DF2F6CBF /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = nativeIG/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-nativeIG-nativeIGTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeIG-nativeIGTests.debug.xcconfig"; path = "Target Support Files/Pods-nativeIG-nativeIGTests/Pods-nativeIG-nativeIGTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-nativeIG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeIG.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6540185121DA89F0FE222946 /* Pods-nativeIG-nativeIGTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeIG-nativeIGTests.debug.xcconfig"; path = "Target Support Files/Pods-nativeIG-nativeIGTests/Pods-nativeIG-nativeIGTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A6B6810002E54AA120C6733 /* Pods-nativeIG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeIG.debug.xcconfig"; path = "Target Support Files/Pods-nativeIG/Pods-nativeIG.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = nativeIG/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-nativeIG-nativeIGTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeIG-nativeIGTests.release.xcconfig"; path = "Target Support Files/Pods-nativeIG-nativeIGTests/Pods-nativeIG-nativeIGTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F7E1053370FEF93235D6ACF /* Pods-nativeIG-nativeIGTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeIG-nativeIGTests.release.xcconfig"; path = "Target Support Files/Pods-nativeIG-nativeIGTests/Pods-nativeIG-nativeIGTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8859D32DB47CD0692ACEC5D /* Pods-nativeIG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nativeIG.release.xcconfig"; path = "Target Support Files/Pods-nativeIG/Pods-nativeIG.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F061C73CF2FFCEFE14919CF1 /* libPods-nativeIG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nativeIG.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-nativeIG-nativeIGTests.a in Frameworks */,
+				5970FF4E1CA342CFEFFC59BF /* libPods-nativeIG-nativeIGTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-nativeIG.a in Frameworks */,
+				3CC848503E21F5EACE602522 /* libPods-nativeIG.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,39 +101,12 @@
 			name = nativeIG;
 			sourceTree = "<group>";
 		};
-		189D2D552C8E35D000C1E34F /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				189D2D562C8E35D000C1E34F /* Fontisto.ttf */,
-				189D2D572C8E35D000C1E34F /* Octicons.ttf */,
-				189D2D582C8E35D000C1E34F /* Feather.ttf */,
-				189D2D592C8E35D000C1E34F /* FontAwesome6_Regular.ttf */,
-				189D2D5A2C8E35D000C1E34F /* Entypo.ttf */,
-				189D2D5B2C8E35D000C1E34F /* FontAwesome5_Brands.ttf */,
-				189D2D5C2C8E35D000C1E34F /* MaterialCommunityIcons.ttf */,
-				189D2D5D2C8E35D000C1E34F /* AntDesign.ttf */,
-				189D2D5E2C8E35D000C1E34F /* Foundation.ttf */,
-				189D2D5F2C8E35D000C1E34F /* Ionicons.ttf */,
-				189D2D602C8E35D000C1E34F /* FontAwesome5_Solid.ttf */,
-				189D2D612C8E35D000C1E34F /* FontAwesome5_Regular.ttf */,
-				189D2D622C8E35D000C1E34F /* FontAwesome.ttf */,
-				189D2D632C8E35D000C1E34F /* Zocial.ttf */,
-				189D2D642C8E35D000C1E34F /* EvilIcons.ttf */,
-				189D2D652C8E35D000C1E34F /* FontAwesome6_Solid.ttf */,
-				189D2D662C8E35D000C1E34F /* SimpleLineIcons.ttf */,
-				189D2D672C8E35D000C1E34F /* FontAwesome6_Brands.ttf */,
-				189D2D682C8E35D000C1E34F /* MaterialIcons.ttf */,
-			);
-			name = Fonts;
-			path = "../node_modules/react-native-vector-icons/Fonts";
-			sourceTree = "<group>";
-		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-nativeIG.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-nativeIG-nativeIGTests.a */,
+				F061C73CF2FFCEFE14919CF1 /* libPods-nativeIG.a */,
+				05CBFFBB6E98A35DB4A17DF0 /* libPods-nativeIG-nativeIGTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,7 +121,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				189D2D552C8E35D000C1E34F /* Fonts */,
 				13B07FAE1A68108700A75B9A /* nativeIG */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* nativeIGTests */,
@@ -211,10 +145,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-nativeIG.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-nativeIG.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-nativeIG-nativeIGTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-nativeIG-nativeIGTests.release.xcconfig */,
+				7A6B6810002E54AA120C6733 /* Pods-nativeIG.debug.xcconfig */,
+				D8859D32DB47CD0692ACEC5D /* Pods-nativeIG.release.xcconfig */,
+				6540185121DA89F0FE222946 /* Pods-nativeIG-nativeIGTests.debug.xcconfig */,
+				9F7E1053370FEF93235D6ACF /* Pods-nativeIG-nativeIGTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -226,12 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "nativeIGTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				D6A5A468F2D3FDA49B531631 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				D216D226195877F3B6F37C24 /* [CP] Embed Pods Frameworks */,
+				3F082A4D3A920EFEF61D1C30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,13 +181,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "nativeIG" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				65CC47347356E0C3B7743CF8 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				757379B9B9ADC7C5F8084076 /* [CP] Embed Pods Frameworks */,
+				613F4685758DB668F99C33B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,27 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189D2D722C8E35D000C1E34F /* Ionicons.ttf in Resources */,
-				189D2D6A2C8E35D000C1E34F /* Octicons.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				189D2D752C8E35D000C1E34F /* FontAwesome.ttf in Resources */,
-				189D2D6B2C8E35D000C1E34F /* Feather.ttf in Resources */,
-				189D2D6E2C8E35D000C1E34F /* FontAwesome5_Brands.ttf in Resources */,
-				189D2D7B2C8E35D000C1E34F /* MaterialIcons.ttf in Resources */,
-				189D2D6C2C8E35D000C1E34F /* FontAwesome6_Regular.ttf in Resources */,
-				189D2D772C8E35D000C1E34F /* EvilIcons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				189D2D732C8E35D000C1E34F /* FontAwesome5_Solid.ttf in Resources */,
-				189D2D7A2C8E35D000C1E34F /* FontAwesome6_Brands.ttf in Resources */,
-				189D2D6F2C8E35D000C1E34F /* MaterialCommunityIcons.ttf in Resources */,
-				189D2D6D2C8E35D000C1E34F /* Entypo.ttf in Resources */,
-				189D2D782C8E35D000C1E34F /* FontAwesome6_Solid.ttf in Resources */,
-				189D2D692C8E35D000C1E34F /* Fontisto.ttf in Resources */,
-				189D2D712C8E35D000C1E34F /* Foundation.ttf in Resources */,
-				189D2D742C8E35D000C1E34F /* FontAwesome5_Regular.ttf in Resources */,
-				189D2D702C8E35D000C1E34F /* AntDesign.ttf in Resources */,
-				189D2D792C8E35D000C1E34F /* SimpleLineIcons.ttf in Resources */,
-				189D2D762C8E35D000C1E34F /* Zocial.ttf in Resources */,
 				B1BCC1B0BE6FAA275316607C /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,46 +271,41 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		3F082A4D3A920EFEF61D1C30 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-nativeIG/Pods-nativeIG-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-nativeIG-nativeIGTests/Pods-nativeIG-nativeIGTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-nativeIG/Pods-nativeIG-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-nativeIG-nativeIGTests/Pods-nativeIG-nativeIGTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nativeIG/Pods-nativeIG-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nativeIG-nativeIGTests/Pods-nativeIG-nativeIGTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		613F4685758DB668F99C33B0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nativeIG/Pods-nativeIG-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-nativeIG-nativeIGTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-nativeIG/Pods-nativeIG-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nativeIG/Pods-nativeIG-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		65CC47347356E0C3B7743CF8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -417,7 +327,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		757379B9B9ADC7C5F8084076 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nativeIG/Pods-nativeIG-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nativeIG/Pods-nativeIG-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nativeIG/Pods-nativeIG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D216D226195877F3B6F37C24 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -434,38 +361,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nativeIG-nativeIGTests/Pods-nativeIG-nativeIGTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		D6A5A468F2D3FDA49B531631 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-nativeIG/Pods-nativeIG-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-nativeIG/Pods-nativeIG-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nativeIG-nativeIGTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nativeIG/Pods-nativeIG-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-nativeIG-nativeIGTests/Pods-nativeIG-nativeIGTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-nativeIG-nativeIGTests/Pods-nativeIG-nativeIGTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nativeIG-nativeIGTests/Pods-nativeIG-nativeIGTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -501,7 +416,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-nativeIG-nativeIGTests.debug.xcconfig */;
+			baseConfigurationReference = 6540185121DA89F0FE222946 /* Pods-nativeIG-nativeIGTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -528,7 +443,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-nativeIG-nativeIGTests.release.xcconfig */;
+			baseConfigurationReference = 9F7E1053370FEF93235D6ACF /* Pods-nativeIG-nativeIGTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -552,11 +467,12 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-nativeIG.debug.xcconfig */;
+			baseConfigurationReference = 7A6B6810002E54AA120C6733 /* Pods-nativeIG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FP92KVD6B6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = nativeIG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -579,11 +495,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-nativeIG.release.xcconfig */;
+			baseConfigurationReference = D8859D32DB47CD0692ACEC5D /* Pods-nativeIG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FP92KVD6B6;
 				INFOPLIST_FILE = nativeIG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
