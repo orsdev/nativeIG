@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   userName: {
     fontSize: Sizes.sm,
-    fontWeight: 800,
+    fontWeight: '800',
     color: ThemeColor.black
   }
 })

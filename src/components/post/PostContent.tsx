@@ -44,7 +44,7 @@ export const PostContent = ({ post, activePostId }: IPostContent) => {
                     <Pressable onPress={toggleLike}>
                         <AntDesign
                             name={isLiked ? 'heart' : 'hearto'}
-                             size={24}
+                            size={24}
                             style={styles.icon}
                             color={isLiked ? ThemeColor.accent : ThemeColor.black} />
                     </Pressable>
@@ -87,10 +87,10 @@ export const PostContent = ({ post, activePostId }: IPostContent) => {
                         date={comment.createdAt}
                         comment={comment.comment} />
                 ))}
-                   <Text style={{
-                        color: ThemeColor.grey,
-                        marginTop: 5
-                    }}>{formatDateDistance(post.createdAt)}</Text>
+                <Text style={{
+                    color: ThemeColor.grey,
+                    marginTop: 5
+                }}>{formatDateDistance(post.createdAt)}</Text>
             </View>
         </View>
     )
@@ -113,6 +113,6 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     bold: {
-        fontWeight: 800
+        fontWeight: '800'
     },
 })
