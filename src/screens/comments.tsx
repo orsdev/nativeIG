@@ -1,10 +1,18 @@
 import AddComment from "@/components/post/AddComment"
 import { PostComment } from "@/components/post/PostComment"
 import { CommentData, ThemeColor } from "@/constants"
+import { useRoute, type RouteProp} from '@react-navigation/native';
+import { RootStackParamList } from "App"
 import { FlatList,  StyleSheet, View } from "react-native"
 
+type CommentRouteProps = RouteProp<RootStackParamList, 'comments'>;
+
 const CommentScreen = () => {
-  return (
+  const route = useRoute<CommentRouteProps>();
+  const params = route.params;
+
+  console.log(params?.postId)
+   return (
     <View style={styles.root}>
       <View style={styles.flatListContainer}>
         <FlatList
@@ -35,6 +43,7 @@ const CommentScreen = () => {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
+    paddingBottom: 20,
     position: 'relative',
   },
   flatListContainer: {

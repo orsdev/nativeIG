@@ -13,16 +13,26 @@ import { useState } from "react";
 import { PostVideo } from "./PostVideo";
 import { DoublePressable } from "../ui";
 import { formatDateDistance } from "@/libs";
+import { useNavigation } from "@react-navigation/native";
+import { CommentNavigationProp } from "App";
+
 interface IPostContent {
     post: IPost;
     activePostId: string;
 };
 
 export const PostContent = ({ post, activePostId }: IPostContent) => {
+    const navigation = useNavigation<CommentNavigationProp>()
     const [isLiked, setIsLiked] = useState(false);
 
     const toggleLike = () => {
         setIsLiked(state => !state)
+    }
+
+    const navigateToComments = () => {
+        navigation.navigate('comments', {
+            postId: post.id
+        })
     }
 
     return (
@@ -74,7 +84,7 @@ export const PostContent = ({ post, activePostId }: IPostContent) => {
                     content={post?.description} />
 
                 {/* Total comments Button */}
-                <Pressable>
+                <Pressable onPress={navigateToComments}>
                     <Text style={{
                         color: ThemeColor.grey,
                         marginTop: 5

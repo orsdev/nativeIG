@@ -16,7 +16,6 @@ const validationSchema = object().shape({
 })
 
 
-
 const EditProfileScreen = () => {
   const [selectedPhoto, setSelectedPhoto] = useState<Asset | null>(null)
   const data = UserProfile[0];

@@ -1,4 +1,3 @@
-import ProfileScreen from '@/screens/profile';
 import PostUploadScreen from '@/screens/post-upload';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FeatherIcon from 'react-native-vector-icons/Feather'
@@ -6,6 +5,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { ThemeColor } from '@/constants';
 import RootStack from './RootStack';
+import ProfileStack from './ProfileStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -77,7 +77,7 @@ function RootTab() {
             )
           }
         }}
-        component={ProfileScreen} />
+        component={ProfileStack} />
     </Tab.Navigator>
   )
 };

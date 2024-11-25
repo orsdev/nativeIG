@@ -1,5 +1,7 @@
 import { ThemeColor } from "@/constants"
 import { ProfileTabEnum } from "@/interfaces/profile.interface"
+import { EditProfileNavigationProp } from "@/navigation/ProfileStack";
+import { useNavigation } from "@react-navigation/native";
 import { Pressable, StyleSheet, Text, View } from "react-native"
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
@@ -16,7 +18,14 @@ const tabData = [
   }
 ]
 
-const ProfileTab = () => {
+const ProfileTab = ({userId}: {userId?: string}) => {
+  const navigation = useNavigation<EditProfileNavigationProp>();
+
+  const navigateToEditProfile = () => {
+    navigation.navigate('editProfileScreen', {
+      userId: userId as string
+    })
+  }
   return (
     <View style={styles.root}>
       {tabData.map(tab => (
@@ -24,9 +33,7 @@ const ProfileTab = () => {
           key={tab.value}
           style={[styles.buttonDefault, tab.isDisabled ? styles.buttonDisabled : {}]}
           disabled={tab.isDisabled}
-          onPress={() => {
-            console.log(tab.value)
-          }}>
+          onPress={navigateToEditProfile}>
           {tab.isDisabled && (
             <Icon name="cancel" size={25} style={{ position: 'absolute', opacity: .3, zIndex: 1 }} />
           )}

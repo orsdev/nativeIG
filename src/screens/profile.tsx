@@ -3,14 +3,17 @@ import ProfileBio from "@/components/profile/bio"
 import ProfilePosts from "@/components/profile/profile-posts"
 import ProfileTab from "@/components/profile/profile-tab"
 import { ProfileData } from "@/constants"
-import { useRoute } from "@react-navigation/native"
+import { ProfileStackParamList } from "@/navigation/ProfileStack"
+import { RouteProp, useRoute } from "@react-navigation/native"
 import { FlatList, StyleSheet, View } from "react-native"
 
+export type ProfileRouteProps = RouteProp<ProfileStackParamList, 'profileScreen'>;
+
 const ProfileScreen = () => {
-  const route = useRoute();
+  const route = useRoute<ProfileRouteProps>();
   const params = route.params;
 
-  console.log(params)
+
   return (
     <View style={styles.root}>
       <FlatList
@@ -25,7 +28,7 @@ const ProfileScreen = () => {
               totalPosts={5}
             />
             <ProfileBio name={ProfileData.username} about={ProfileData.bio} />
-            <ProfileTab />
+            <ProfileTab userId={params?.userId} />
           </View>
         )}
         keyExtractor={item => item.id}
