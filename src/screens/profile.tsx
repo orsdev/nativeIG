@@ -3,9 +3,14 @@ import ProfileBio from "@/components/profile/bio"
 import ProfilePosts from "@/components/profile/profile-posts"
 import ProfileTab from "@/components/profile/profile-tab"
 import { ProfileData } from "@/constants"
+import { useRoute } from "@react-navigation/native"
 import { FlatList, StyleSheet, View } from "react-native"
 
 const ProfileScreen = () => {
+  const route = useRoute();
+  const params = route.params;
+
+  console.log(params)
   return (
     <View style={styles.root}>
       <FlatList

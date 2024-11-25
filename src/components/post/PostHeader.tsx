@@ -1,14 +1,24 @@
 import { Sizes, ThemeColor } from "@/constants";
-import { Image, Pressable, StyleSheet, Text, View } from "react-native"
+import { useNavigation } from "@react-navigation/native";
+import { ProfileNavigationProp } from "App";
+import { Image, Pressable, StyleSheet, Text } from "react-native"
 import Entypo from 'react-native-vector-icons/Entypo'
 
 interface IPostImage {
   imageUri: string;
+  userId: string
 }
 
-export const PostHeader = ({ imageUri }: IPostImage) => {
+
+export const PostHeader = ({ imageUri, userId }: IPostImage) => {
+  const navigation = useNavigation<ProfileNavigationProp>();
+
   return (
-    <View style={styles.root}>
+    <Pressable style={styles.root} onPress={() => {
+      navigation.navigate("profile", {
+        userId
+      })
+    }}>
       <Image
         source={{
           uri: imageUri
@@ -19,7 +29,7 @@ export const PostHeader = ({ imageUri }: IPostImage) => {
       <Pressable style={styles.pressableIcon}>
         <Entypo name="dots-three-horizontal" size={16} style={styles.threeDot} />
       </Pressable>
-    </View>
+    </Pressable>
   )
 }
 

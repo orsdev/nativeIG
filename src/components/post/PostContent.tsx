@@ -27,7 +27,9 @@ export const PostContent = ({ post, activePostId }: IPostContent) => {
 
     return (
         <View style={styles.root}>
-            <PostHeader imageUri={"https://images.pexels.com/photos/28974077/pexels-photo-28974077/free-photo-of-close-up-of-two-polar-bears-on-rocky-terrain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />
+            <PostHeader imageUri={"https://images.pexels.com/photos/28974077/pexels-photo-28974077/free-photo-of-close-up-of-two-polar-bears-on-rocky-terrain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} 
+             userId={post.user.id}
+            />
             {post?.images && (
                 <PostImage
                     images={post?.images}

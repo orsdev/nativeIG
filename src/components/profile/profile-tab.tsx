@@ -21,6 +21,7 @@ const ProfileTab = () => {
     <View style={styles.root}>
       {tabData.map(tab => (
         <Pressable
+          key={tab.value}
           style={[styles.buttonDefault, tab.isDisabled ? styles.buttonDisabled : {}]}
           disabled={tab.isDisabled}
           onPress={() => {
