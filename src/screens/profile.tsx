@@ -13,7 +13,7 @@ const ProfileScreen = () => {
   const route = useRoute<ProfileRouteProps>();
   const params = route.params;
 
-
+console.log(params)
   return (
     <View style={styles.root}>
       <FlatList

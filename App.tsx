@@ -3,7 +3,7 @@ import {
   StyleSheet,
   View
 } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import { LinkingOptions, NavigationContainer } from '@react-navigation/native';
 import { NativeStackNavigationProp } from 'node_modules/@react-navigation/native-stack/lib/typescript/commonjs/src';
 import RootTab from '@/navigation/RootTab';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -24,12 +24,35 @@ export type CommentNavigationProp = NativeStackNavigationProp<RootStackParamList
 
 export const AppStack = createNativeStackNavigator<RootStackParamList>();
 
+const linking: LinkingOptions<RootStackParamList> = {
+  prefixes: ['nativeg://', 'https://nativeg.com'],
+  config: {
+    initialRouteName: 'homeTab',
+    screens: {
+      comments: 'comments',
+      // Nested screens
+      homeTab: {
+        screens: {
+         feed: {
+            initialRouteName: 'feed',
+            screens: {
+              profile: 'user/:id',
+            },
+          },
+        },
+      },
+    },
+  }
+};
+
 function App(): React.JSX.Element {
   // const isDarkMode = useColorScheme() === 'dark';  
 
   return (
     <View style={styles.root}>
-      <NavigationContainer>
+      <NavigationContainer
+      linking={linking}
+      >
         <AppStack.Navigator>
           <AppStack.Screen
             name="homeTab"
