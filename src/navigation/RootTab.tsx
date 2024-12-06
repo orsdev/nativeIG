@@ -1,21 +1,35 @@
 import PostUploadScreen from '@/screens/post-upload';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { BottomTabNavigationProp, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FeatherIcon from 'react-native-vector-icons/Feather'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { ThemeColor } from '@/constants';
-import RootStack from './RootStack';
+import RootStack, { RootStackParamList } from './RootStack';
 import ProfileStack from './ProfileStack';
+import SearchTab from './SearchTab';
+import { NavigatorScreenParams } from '@react-navigation/native';
 
-const Tab = createBottomTabNavigator();
+export type RootTabParamList = {
+  feed: NavigatorScreenParams<RootStackParamList>
+  search: undefined
+  uploadPost: undefined,
+  notifications: undefined,
+  myProfile: undefined
+};
+
+export type RootTabFeedNavigationProp = BottomTabNavigationProp<RootTabParamList, "feed">;
+
+const Tab = createBottomTabNavigator<RootTabParamList>();
 
 function RootTab() {
   return (
-    <Tab.Navigator screenOptions={{
-      tabBarShowLabel: false,
-      tabBarActiveTintColor: ThemeColor.primary,
-      tabBarInactiveTintColor: ThemeColor.black
-    }}>
+    <Tab.Navigator
+      initialRouteName='feed'
+      screenOptions={{
+        tabBarShowLabel: false,
+        tabBarActiveTintColor: ThemeColor.primary,
+        tabBarInactiveTintColor: ThemeColor.black
+      }}>
       <Tab.Screen
         name="feed"
         component={RootStack}
@@ -31,7 +45,7 @@ function RootTab() {
       />
       <Tab.Screen
         name="search"
-        component={PostUploadScreen}
+        component={SearchTab}
         options={{
           tabBarIcon: ({ color, size }) => (
             <MaterialIcons name="search" size={size} color={color} />

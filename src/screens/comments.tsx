@@ -2,10 +2,10 @@ import AddComment from "@/components/post/AddComment"
 import { PostComment } from "@/components/post/PostComment"
 import { CommentData, ThemeColor } from "@/constants"
 import { useRoute, type RouteProp} from '@react-navigation/native';
-import { RootStackParamList } from "App"
+import { StackParamList } from "App"
 import { FlatList,  StyleSheet, View } from "react-native"
 
-type CommentRouteProps = RouteProp<RootStackParamList, 'comments'>;
+type CommentRouteProps = RouteProp<StackParamList, 'comments'>;
 
 const CommentScreen = () => {
   const route = useRoute<CommentRouteProps>();

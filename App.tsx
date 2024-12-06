@@ -1,17 +1,16 @@
 import {
-  SafeAreaView,
   StyleSheet,
   View
 } from 'react-native';
-import { LinkingOptions, NavigationContainer } from '@react-navigation/native';
+import { LinkingOptions, NavigationContainer, NavigatorScreenParams } from '@react-navigation/native';
 import { NativeStackNavigationProp } from 'node_modules/@react-navigation/native-stack/lib/typescript/commonjs/src';
-import RootTab from '@/navigation/RootTab';
+import RootTab, { RootTabParamList } from '@/navigation/RootTab';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import CommentScreen from '@/screens/comments';
 
-export type RootStackParamList = {
-  homeTab: undefined;
-  profile: {
+export type StackParamList = {
+  homeTab: NavigatorScreenParams<RootTabParamList>
+  myProfile: {
     userId: string
   };
   comments: {
@@ -19,12 +18,12 @@ export type RootStackParamList = {
   }
 };
 
-export type ProfileNavigationProp = NativeStackNavigationProp<RootStackParamList, "profile">;
-export type CommentNavigationProp = NativeStackNavigationProp<RootStackParamList, "comments">;
+export type MyProfileNavigationProp = NativeStackNavigationProp<StackParamList, "myProfile">;
+export type CommentNavigationProp = NativeStackNavigationProp<StackParamList, "comments">;
 
-export const AppStack = createNativeStackNavigator<RootStackParamList>();
+export const AppStack = createNativeStackNavigator<StackParamList>();
 
-const linking: LinkingOptions<RootStackParamList> = {
+const linking: LinkingOptions<StackParamList> = {
   prefixes: ['nativeg://', 'https://nativeg.com'],
   config: {
     initialRouteName: 'homeTab',
@@ -33,12 +32,12 @@ const linking: LinkingOptions<RootStackParamList> = {
       // Nested screens
       homeTab: {
         screens: {
-         feed: {
-            initialRouteName: 'feed',
+          feed: {
+            initialRouteName: 'home' as never, 
             screens: {
-              profile: 'user/:id',
-            },
-          },
+              userProfile: 'user/:id',
+            }
+          }
         },
       },
     },
@@ -46,12 +45,11 @@ const linking: LinkingOptions<RootStackParamList> = {
 };
 
 function App(): React.JSX.Element {
-  // const isDarkMode = useColorScheme() === 'dark';  
-
+  // const isDarkMode = useColorScheme() === 'dark'; 
   return (
     <View style={styles.root}>
       <NavigationContainer
-      linking={linking}
+        linking={linking}
       >
         <AppStack.Navigator>
           <AppStack.Screen

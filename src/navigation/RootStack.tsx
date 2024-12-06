@@ -1,12 +1,12 @@
 import EditProfileScreen from '@/screens/edit-profile';
 import PostUploadScreen from '@/screens/post-upload';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createNativeStackNavigator, NativeStackNavigationProp } from '@react-navigation/native-stack';
 import HomeScreen from '@/screens/home';
 import ProfileScreen from '@/screens/profile';
 
-type RootStackParamList = {
+export type RootStackParamList = {
   home: undefined;
-  profile: {
+  userProfile: {
     userId: string
   };
   comment: undefined;
@@ -14,7 +14,7 @@ type RootStackParamList = {
   postUpload: undefined;
 };
 
-
+export type UserProfileNavigationProp = NativeStackNavigationProp<RootStackParamList, "userProfile">;
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function RootStack() {
@@ -33,7 +33,7 @@ function RootStack() {
           }} />
 
       </Stack.Group>
-      <Stack.Screen name="profile" options={{title: 'Profile'}} component={ProfileScreen} />
+      <Stack.Screen name="userProfile" options={{title: 'Profile'}} component={ProfileScreen} />
       <Stack.Screen name="editProfile" component={EditProfileScreen} />
       <Stack.Screen name="postUpload" component={PostUploadScreen} />
     </Stack.Navigator>
