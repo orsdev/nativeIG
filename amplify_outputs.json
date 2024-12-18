@@ -1,0 +1,29 @@
+{
+  "auth": {
+    "user_pool_id": "us-east-1_49VnzIxx6",
+    "aws_region": "us-east-1",
+    "user_pool_client_id": "6mqr6tl9iv7cqnvlrgs3mo252c",
+    "identity_pool_id": "us-east-1:491c6faa-0883-4f3b-81f9-e4e13b8aef85",
+    "mfa_methods": [],
+    "standard_required_attributes": [
+      "email",
+      "phone_number",
+      "name"
+    ],
+    "username_attributes": [],
+    "user_verification_types": [
+      "email"
+    ],
+    "groups": [],
+    "mfa_configuration": "NONE",
+    "password_policy": {
+      "min_length": 8,
+      "require_lowercase": true,
+      "require_numbers": true,
+      "require_symbols": true,
+      "require_uppercase": true
+    },
+    "unauthenticated_identities_enabled": true
+  },
+  "version": "1.3"
+}

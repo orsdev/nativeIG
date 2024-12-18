@@ -4,7 +4,9 @@ import ProfilePosts from "@/components/profile/profile-posts"
 import ProfileTab from "@/components/profile/profile-tab"
 import { ProfileData } from "@/constants"
 import { ProfileStackParamList } from "@/navigation/ProfileStack"
+import { useAuthStore } from "@/store"
 import { RouteProp, useRoute } from "@react-navigation/native"
+import { useMemo } from "react"
 import { FlatList, StyleSheet, View } from "react-native"
 
 export type ProfileRouteProps = RouteProp<ProfileStackParamList, 'profileScreen'>;
@@ -12,8 +14,24 @@ export type ProfileRouteProps = RouteProp<ProfileStackParamList, 'profileScreen'
 const ProfileScreen = () => {
   const route = useRoute<ProfileRouteProps>();
   const params = route.params;
+  const { user } = useAuthStore()
 
-console.log(params)
+  const userInfo = useMemo(() => {
+    if (params?.userId) {
+      return {
+        name: ProfileData.name,
+        username: ProfileData.username,
+        bio: ProfileData.bio
+      }
+    } else {
+      return {
+        name: user?.name ?? '',
+        username: user?.username ?? '',
+        bio: ''
+      }
+    }
+  }, [params])
+
   return (
     <View style={styles.root}>
       <FlatList
@@ -27,7 +45,10 @@ console.log(params)
               totalFollowing={200}
               totalPosts={5}
             />
-            <ProfileBio name={ProfileData.username} about={ProfileData.bio} />
+            <ProfileBio
+              name={userInfo.name}
+              userName={userInfo.username}
+              about={userInfo.bio} />
             <ProfileTab userId={params?.userId} />
           </View>
         )}

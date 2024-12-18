@@ -3,10 +3,12 @@ import { ThemeColor, UserProfile } from "@/constants"
 import { IUser } from "@/interfaces/profile.interface";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Button, Image, StyleSheet, Text, View } from "react-native"
+import { Button, Image, Pressable, StyleSheet, Text, View } from "react-native"
 import { Asset, launchImageLibrary } from 'react-native-image-picker';
 import { object, string } from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { alertMessage } from "@/utils";
+import { useAuthStore } from "@/store";
 
 const validationSchema = object().shape({
   name: string().required('Field is required'),
@@ -17,9 +19,10 @@ const validationSchema = object().shape({
 
 
 const EditProfileScreen = () => {
+  const {handleLogOut} = useAuthStore()
   const [selectedPhoto, setSelectedPhoto] = useState<Asset | null>(null)
   const data = UserProfile[0];
-  const { control, handleSubmit, setValue, formState: { errors } } = useForm<Omit<IUser, 'id'>>({
+  const { control, handleSubmit,  formState: { errors } } = useForm<Omit<IUser, 'id'>>({
     defaultValues: {
       name: data?.name ?? '',
       username: data?.username ?? '',
@@ -46,11 +49,27 @@ const EditProfileScreen = () => {
     console.log(values)
   };
 
+  const handleLogout = async () => {
+    try {
+      await handleLogOut();
+    } catch (_) {
+      alertMessage({
+        title: 'Error',
+        message: 'Can"t log out at this time. Try again',
+        buttonText: 'Close'
+      })
+    }
+
+  };
+
   return (
     <View style={styles.root}>
       <Image source={{ uri: selectedPhoto?.uri || UserProfile[0].image }} style={styles.avatar} />
       <Text style={styles.textButton} onPress={onChangePhoto}> Change profile photo </Text>
-      <View style={{ gap: 10, width: '100%' }}>
+      <Pressable onPress={handleLogout} style={styles.logOutButton}>
+        <Text style={{color: ThemeColor.white}}>Log out</Text>
+      </Pressable>
+      <View style={{ gap: 30, width: '100%', marginTop: 40 }}>
         <TextBox
           name="name"
           label="Name"
@@ -86,6 +105,14 @@ const styles = StyleSheet.create({
   root: {
     alignItems: 'center',
     padding: 10
+  },
+  logOutButton: {
+   borderWidth: 1,
+   borderColor: ThemeColor.grey,
+   paddingHorizontal: 4,
+   paddingVertical: 2,
+   borderRadius: 2,
+   backgroundColor: ThemeColor.grey
   },
   avatar: {
     width: '30%',

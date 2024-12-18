@@ -1,5 +1,6 @@
 import { Sizes, ThemeColor } from "@/constants";
 import { UserProfileNavigationProp } from "@/navigation/RootStack";
+import { useAuthStore } from "@/store";
 import { useNavigation } from "@react-navigation/native";
 import { Image, Pressable, StyleSheet, Text } from "react-native"
 import Entypo from 'react-native-vector-icons/Entypo'
@@ -11,6 +12,7 @@ interface IPostImage {
 
 
 export const PostHeader = ({ imageUri, userId }: IPostImage) => {
+  // const {user} = useAuthStore()
   const navigation = useNavigation<UserProfileNavigationProp>();
 
   return (
