@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   StyleSheet,
   View
@@ -62,59 +63,57 @@ const linking: LinkingOptions<StackParamList> = {
 };
 
 function App(): React.JSX.Element {
-  const {user} = useProtectedRoute()
+  const { user } = useProtectedRoute()
 
   return (
-    <View style={styles.root}>
-      <AppStack.Navigator initialRouteName="signIn">
-        {!user && (
-          <>
-            <AppStack.Screen
-              name="signIn"
-              options={{
-                headerShown: false
-              }}
-              component={SignInScreen}
-            />
+    <AppStack.Navigator initialRouteName="signIn">
+      {!user && (
+        <>
+          <AppStack.Screen
+            name="signIn"
+            options={{
+              headerShown: false
+            }}
+            component={SignInScreen}
+          />
 
-            <AppStack.Screen
-              name="signUp"
-              options={{
-                headerShown: false
-              }}
-              component={SignUpScreen}
-            />
-            <AppStack.Screen
-              name="verify"
-              options={{
-                headerShown: false
-              }}
-              component={VerifyScreen}
-            />
-          </>
-        )}
-        {user && (
-          <>
-            <AppStack.Screen
-              name="homeTab"
-              options={{
-                headerShown: false
-              }}
-              component={RootTab}
-            />
-            <AppStack.Screen
-              name="comments"
-              options={{
-                headerTitle: 'Comments',
-                headerBackTitle: 'Home',
-                headerBackButtonDisplayMode: 'minimal' // Hide back to prev screen title
-              }}
-              component={CommentScreen}
-            />
-          </>
-        )}
-      </AppStack.Navigator>
-    </View>
+          <AppStack.Screen
+            name="signUp"
+            options={{
+              headerShown: false
+            }}
+            component={SignUpScreen}
+          />
+          <AppStack.Screen
+            name="verify"
+            options={{
+              headerShown: false
+            }}
+            component={VerifyScreen}
+          />
+        </>
+      )}
+      {user && (
+        <>
+          <AppStack.Screen
+            name="homeTab"
+            options={{
+              headerShown: false
+            }}
+            component={RootTab}
+          />
+          <AppStack.Screen
+            name="comments"
+            options={{
+              headerTitle: 'Comments',
+              headerBackTitle: 'Home',
+              headerBackButtonDisplayMode: 'minimal' // Hide back to prev screen title
+            }}
+            component={CommentScreen}
+          />
+        </>
+      )}
+    </AppStack.Navigator>
   );
 }
 
